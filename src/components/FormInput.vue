@@ -88,7 +88,7 @@ export default {
                 const existingData = JSON.parse(localStorage.getItem("myData")) || [];
                 existingData.push({ ...formData.value });
                 localStorage.setItem("myData", JSON.stringify(existingData));
-                alert("Datos guardados en LocalStorage!");
+                alert("Datos actualizados correctamente");
                 formData.value = { name: '', type: 'Gasto', price: '' };
                 showForm.value = false;
                 window.location.reload();
