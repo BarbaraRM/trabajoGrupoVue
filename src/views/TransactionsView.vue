@@ -34,13 +34,13 @@ export default {
     const totalIngresos = computed(() => {
       return transactions.value
         .filter(t => t.type === 'Ingreso')
-        .reduce((acc, curr) => acc + curr.amount, 0);
+        .reduce((acc, curr) => acc + curr.price, 0);
     });
 
     const totalEgresos = computed(() => {
       return transactions.value
         .filter(t => t.type === 'Gasto')
-        .reduce((acc, curr) => acc + curr.amount, 0);
+        .reduce((acc, curr) => acc + curr.price, 0);
     });
 
     const saldoDisponible = computed(() => {
