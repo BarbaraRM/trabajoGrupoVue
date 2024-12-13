@@ -49,7 +49,7 @@
           <tr v-for="transaction in transactions" :key="transaction.name" class="border-b border-gray-700">
             <td class="py-2 px-4">{{ transaction.name }}</td>
             <td class="py-2 px-4">{{ transaction.type }}</td>
-            <td class="py-2 px-4">{{ transaction.amount }}</td>
+            <td class="py-2 px-4">{{ transaction.price }}</td>
             <td class="py-2 px-4">{{ transaction.date }}</td>
           </tr>
         </tbody>
